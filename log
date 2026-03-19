@@ -351,3 +351,20 @@ Thu Mar 19 07:38:22 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 100c3ba
+Thu Mar 19 07:39:23 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:56:25: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   56 |    int primerElemento = first(L);
+      |                         ^~~~~
+exercises.c:57:25: error: comparison between pointer and integer [-Werror]
+   57 |    while(primerElemento != NULL){
+      |                         ^~
+exercises.c:59:22: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       primerElemento = next(L);
+      |                      ^
+cc1: all warnings being treated as errors
+7686c6b
