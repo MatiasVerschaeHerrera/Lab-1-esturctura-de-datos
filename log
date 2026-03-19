@@ -345,3 +345,9 @@ exercises.c:58:12: error: assignment to ‘int’ from ‘int *’ makes integer
    58 |       cont += primerElemento;
       |            ^~
 9f0832c
+Thu Mar 19 07:38:22 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+100c3ba
