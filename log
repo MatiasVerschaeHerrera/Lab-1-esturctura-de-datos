@@ -261,3 +261,20 @@ exercises.c:59:36: error: invalid use of incomplete typedef ‘List’
       |                                    ^~
 cc1: all warnings being treated as errors
 abff08a
+Thu Mar 19 07:33:06 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:56:25: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   56 |    int primerElemento = (int*) first(L);
+      |                         ^
+exercises.c:57:25: error: comparison between pointer and integer [-Werror]
+   57 |    while(primerElemento != NULL){
+      |                         ^~
+exercises.c:59:22: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       primerElemento = (int*) next(L);
+      |                      ^
+cc1: all warnings being treated as errors
+ae4a680
