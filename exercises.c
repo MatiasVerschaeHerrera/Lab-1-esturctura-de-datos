@@ -53,10 +53,10 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int cont = 0;
-   int primerElemento = first(L);
+   void* primerElemento = first(L);
    while(primerElemento != NULL){
-      cont += primerElemento;
-      primerElemento = int next(L);
+      cont += *((int*)primerElemento);
+      primerElemento = next(L);
    }
    return cont;
 }
