@@ -54,7 +54,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int cont = 0;
    while(void* first(List *L) != NULL){
-      cont += int first(List *L);
+      cont += int* first(List *L);
       void* popFront(List *L);
    }
    return cont;
