@@ -193,3 +193,20 @@ exercises.c:59:36: error: expected expression before ‘List’
       |                                    ^~~~
 cc1: all warnings being treated as errors
 af08d97
+Thu Mar 19 07:29:16 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:56:25: error: expected expression before ‘int’
+   56 |    int primerElemento = int* first(List *L);
+      |                         ^~~
+exercises.c:57:25: error: comparison between pointer and integer [-Werror]
+   57 |    while(primerElemento != NULL){
+      |                         ^~
+exercises.c:59:24: error: expected expression before ‘int’
+   59 |       primerElemento = int* next(List *L);
+      |                        ^~~
+cc1: all warnings being treated as errors
+a599396
