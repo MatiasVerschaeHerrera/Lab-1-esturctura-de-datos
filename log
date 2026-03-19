@@ -122,3 +122,23 @@ exercises.c:59:24: error: expected expression before ‘void’
       |                        ^~~~
 cc1: all warnings being treated as errors
 c9be64e
+Thu Mar 19 07:26:00 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:56:38: error: expected expression before ‘List’
+   56 |    int primerElemento = (int*) first(List *L);
+      |                                      ^~~~
+exercises.c:57:25: error: comparison between pointer and integer [-Werror]
+   57 |    while(primerElemento != NULL){
+      |                         ^~
+exercises.c:58:15: error: invalid type argument of unary ‘*’ (have ‘int’)
+   58 |       cont += *primerElemento;
+      |               ^~~~~~~~~~~~~~~
+exercises.c:59:36: error: expected expression before ‘List’
+   59 |       primerElemento = (int*) next(List *L);
+      |                                    ^~~~
+cc1: all warnings being treated as errors
+ab4d901
