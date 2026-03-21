@@ -605,3 +605,19 @@ exercises.c:47:20: error: cast to pointer from integer of different size [-Werro
       |                    ^
 cc1: all warnings being treated as errors
 ee067ad
+Sat Mar 21 08:35:02 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:20: error: passing argument 2 of ‘pushFront’ makes pointer from integer without a cast [-Wint-conversion]
+   47 |       pushFront(L, i);
+      |                    ^
+      |                    |
+      |                    int
+In file included from exercises.c:6:
+arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
+   17 | void pushFront(List *L, void *dato);
+      |                         ~~~~~~^~~~
+263b373
