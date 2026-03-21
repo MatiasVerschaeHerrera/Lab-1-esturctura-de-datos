@@ -517,3 +517,44 @@ exercises.c:128:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 8175a87
+Sat Mar 21 08:31:13 PM UTC 2026: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:20: error: expected expression before ‘int’
+   47 |       pushFront(L, int* i);
+      |                    ^~~
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:117:28: error: comparison between pointer and integer [-Werror]
+  117 |    while(cadena[posCadena] != NULL){
+      |                            ^~
+exercises.c:119:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  119 |          push(pila, cadena[posCadena]);
+      |                     ~~~~~~^~~~~~~~~~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:123:23: error: expected ‘)’ before ‘{’ token
+  123 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                ~      ^
+      |                       )
+exercises.c:123:105: error: comparison between pointer and integer [-Werror]
+  123 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                                                         ^~
+exercises.c:123:120: error: expected ‘)’ before ‘{’ token
+  123 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                                                                 ~      ^
+      |                                                                                                                        )
+exercises.c:123:92: error: called object is not a function or function pointer
+  123 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:131:1: error: control reaches end of non-void function [-Werror=return-type]
+  131 | }
+      | ^
+cc1: all warnings being treated as errors
+e00a99a

@@ -43,6 +43,9 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+   for(int i = 0; i < 11; i++){
+      pushFront(L, int* i);
+   }
    return L;
 }
 
@@ -113,7 +116,7 @@ int parentesisBalanceados(char *cadena) {
    int posCadena = 0;
    while(cadena[posCadena] != NULL){
       if(cadena[posCadena] == '(' || cadena[posCadena] == '{' || cadena[posCadena] == '['){
-         push(pila, *cadena[posCadena]);
+         push(pila, cadena[posCadena]);
       }
       else if(cadena[posCadena] == ')' || cadena[posCadena] == '}' || cadena[posCadena] == ']'){
          if(top(pila) != NULL){
