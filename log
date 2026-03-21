@@ -721,3 +721,13 @@ Sat Mar 21 08:48:24 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 04f3687
+Sat Mar 21 08:51:13 PM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   49 |       ptr = i;
+      |           ^
+5e8ff78
