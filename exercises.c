@@ -116,13 +116,13 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena) {
    Stack* pila = create_stack();
    int posCadena = 0;
-   while(cadena[posCadena] != NULL){
+   while(cadena[posCadena] != '\0'){
       if(cadena[posCadena] == '(' || cadena[posCadena] == '{' || cadena[posCadena] == '['){
          push(pila, cadena[posCadena]);
       }
       else if(cadena[posCadena] == ')' || cadena[posCadena] == '}' || cadena[posCadena] == ']'){
-         if(top(pila) != NULL){
-            if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+         if(pila != NULL){
+            if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
                pop(pila);
             }
          }

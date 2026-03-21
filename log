@@ -780,3 +780,35 @@ exercises.c:133:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 9578dfb
+Sat Mar 21 09:04:29 PM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  121 |          push(pila, cadena[posCadena]);
+      |                     ~~~~~~^~~~~~~~~~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:125:55: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                       ^~
+exercises.c:125:105: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                                                         ^~
+exercises.c:125:152: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                                                                                                        ^~
+exercises.c:125:92: error: called object is not a function or function pointer
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:133:1: error: control reaches end of non-void function [-Werror=return-type]
+  133 | }
+      | ^
+cc1: all warnings being treated as errors
+19c7e0e
