@@ -44,7 +44,7 @@ Al finalizar retorna la lista creada.
 List* crea_lista() {
    List* L = create_list();
    for(int i = 0; i < 11; i++){
-      int* ptr = (int*) malloc(sizeof (int));
+      int* ptr = (int*) malloc(sizeof(int));
       *ptr = i;
       pushFront(L, ptr);
    }
@@ -114,7 +114,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   /*Stack* pila = create_stack();
+   Stack* pila = create_stack();
    int posCadena = 0;
    while(cadena[posCadena] != NULL){
       if(cadena[posCadena] == '(' || cadena[posCadena] == '{' || cadena[posCadena] == '['){
@@ -129,11 +129,9 @@ int parentesisBalanceados(char *cadena) {
          else return 0;
       }
       posCadena++;
-   }*/
-   return 0;
+   }
 }
 
 /*link chat gpt:
-https://chatgpt.com/s/t_69bc557b5b888191909be64ec4447937
 https://chatgpt.com/s/t_69bc557b5b888191909be64ec4447937
 */

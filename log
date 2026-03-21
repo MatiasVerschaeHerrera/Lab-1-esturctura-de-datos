@@ -743,3 +743,40 @@ Sat Mar 21 08:52:43 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 2bc761d
+Sat Mar 21 08:56:07 PM UTC 2026: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:119:28: error: comparison between pointer and integer [-Werror]
+  119 |    while(cadena[posCadena] != NULL){
+      |                            ^~
+exercises.c:121:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  121 |          push(pila, cadena[posCadena]);
+      |                     ~~~~~~^~~~~~~~~~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:125:23: error: expected ‘)’ before ‘{’ token
+  125 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                ~      ^
+      |                       )
+exercises.c:125:105: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                                                         ^~
+exercises.c:125:120: error: expected ‘)’ before ‘{’ token
+  125 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                                                                 ~      ^
+      |                                                                                                                        )
+exercises.c:125:92: error: called object is not a function or function pointer
+  125 |             if((cadena{posCadena} == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena{posCadena} == ']' && top(pila) == '[')){
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:133:1: error: control reaches end of non-void function [-Werror=return-type]
+  133 | }
+      | ^
+cc1: all warnings being treated as errors
+9578dfb
