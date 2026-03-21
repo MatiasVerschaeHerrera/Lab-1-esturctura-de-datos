@@ -695,3 +695,17 @@ exercises.c:49:14: error: expected expression before ‘%’ token
    49 |       printf(%d, ptr);
       |              ^
 e91b629
+Sat Mar 21 08:47:41 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:16: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Werror=format=]
+   49 |       printf("%d", ptr);
+      |               ~^   ~~~
+      |                |   |
+      |                int int *
+      |               %ls
+cc1: all warnings being treated as errors
+95412e3
