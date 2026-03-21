@@ -573,3 +573,13 @@ exercises.c:131:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 297a259
+Sat Mar 21 08:34:04 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   47 |       pushFront(L, *i);
+      |                    ^~
+f76c859
