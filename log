@@ -583,3 +583,14 @@ exercises.c:47:20: error: invalid type argument of unary ‘*’ (have ‘int’
    47 |       pushFront(L, *i);
       |                    ^~
 f76c859
+Sat Mar 21 08:34:28 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:22: error: comparison between pointer and integer [-Werror]
+   46 |    for(int* i = 0; i < 11; i++){
+      |                      ^
+cc1: all warnings being treated as errors
+0c1d96d
