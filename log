@@ -666,3 +666,16 @@ exercises.c:48:20: error: cast to pointer from integer of different size [-Werro
       |                    ^
 cc1: all warnings being treated as errors
 957a156
+Sat Mar 21 08:46:26 PM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:36: error: expected ‘;’ before ‘pushFront’
+   48 |       ptr = malloc(i * sizeof *ptr)
+      |                                    ^
+      |                                    ;
+   49 |       pushFront(L, ptr);
+      |       ~~~~~~~~~                     
+0318f42
