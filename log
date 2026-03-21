@@ -594,3 +594,14 @@ exercises.c:46:22: error: comparison between pointer and integer [-Werror]
       |                      ^
 cc1: all warnings being treated as errors
 0c1d96d
+Sat Mar 21 08:34:46 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:20: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   47 |       pushFront(L, (int*) i);
+      |                    ^
+cc1: all warnings being treated as errors
+ee067ad
