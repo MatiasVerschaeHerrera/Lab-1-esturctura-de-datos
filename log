@@ -639,3 +639,19 @@ exercises.c:47:20: error: expected expression before ‘void’
    47 |       pushFront(L, void* i);
       |                    ^~~~
 c319876
+Sat Mar 21 08:41:01 PM UTC 2026: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   48 |       pushFront(L, *num);
+      |                    ^~~~
+exercises.c:49:12: error: expected ‘;’ before ‘}’ token
+   49 |       num++
+      |            ^
+      |            ;
+   50 |    }
+      |    ~        
+b994032
