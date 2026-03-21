@@ -45,8 +45,8 @@ List* crea_lista() {
    List* L = create_list();
    int num = 1;
    for(int i = 0; i < 11; i++){
-      pushFront(L, *num);
-      num++
+      pushFront(L, (int*) num);
+      num++;
    }
    return L;
 }

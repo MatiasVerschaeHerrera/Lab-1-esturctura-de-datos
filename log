@@ -655,3 +655,14 @@ exercises.c:49:12: error: expected ‘;’ before ‘}’ token
    50 |    }
       |    ~        
 b994032
+Sat Mar 21 08:41:41 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:20: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   48 |       pushFront(L, (int*) num);
+      |                    ^
+cc1: all warnings being treated as errors
+957a156
