@@ -631,3 +631,11 @@ exercises.c:47:20: error: expected expression before ‘void’
    47 |       pushFront(L, void *i);
       |                    ^~~~
 2b22371
+Sat Mar 21 08:38:31 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:20: error: expected expression before ‘void’
+   47 |       pushFront(L, void* i);
+      |                    ^~~~
+c319876
