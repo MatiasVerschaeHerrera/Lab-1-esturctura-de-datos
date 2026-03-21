@@ -112,7 +112,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   Stack* pila = create_stack();
+   /*Stack* pila = create_stack();
    int posCadena = 0;
    while(cadena[posCadena] != NULL){
       if(cadena[posCadena] == '(' || cadena[posCadena] == '{' || cadena[posCadena] == '['){
@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
          else return 0;
       }
       posCadena++;
-   }
+   }*/
 }
 
 /*link chat gpt:
