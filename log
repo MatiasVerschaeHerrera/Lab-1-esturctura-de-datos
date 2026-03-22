@@ -928,3 +928,53 @@ exercises.c:134:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 cf47234
+Sun Mar 22 04:53:30 PM UTC 2026: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:120:24: error: initialization of ‘void *’ from ‘char’ makes pointer from integer without a cast [-Wint-conversion]
+  120 |       void* elemento = cadena[posCadena]
+      |                        ^~~~~~
+exercises.c:121:7: error: expected ‘,’ or ‘;’ before ‘if’
+  121 |       if(elemento == '(' || elemento == '{' || elemento == '['){
+      |       ^~
+exercises.c:124:7: error: ‘else’ without a previous ‘if’
+  124 |       else if(elemento == ')' || elemento == '}' || elemento == ']'){
+      |       ^~~~
+exercises.c:124:24: error: comparison between pointer and integer [-Werror]
+  124 |       else if(elemento == ')' || elemento == '}' || elemento == ']'){
+      |                        ^~
+exercises.c:124:43: error: comparison between pointer and integer [-Werror]
+  124 |       else if(elemento == ')' || elemento == '}' || elemento == ']'){
+      |                                           ^~
+exercises.c:124:62: error: comparison between pointer and integer [-Werror]
+  124 |       else if(elemento == ')' || elemento == '}' || elemento == ']'){
+      |                                                              ^~
+exercises.c:126:26: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                          ^~
+exercises.c:126:46: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                              ^~
+exercises.c:126:67: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                   ^~
+exercises.c:126:87: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                                       ^~
+exercises.c:126:105: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                                                         ^~
+exercises.c:126:125: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                                                                             ^~
+exercises.c:126:74: error: called object is not a function or function pointer
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:135:1: error: control reaches end of non-void function [-Werror=return-type]
+  135 | }
+      | ^
+cc1: all warnings being treated as errors
+1b5b7d7
