@@ -978,3 +978,35 @@ exercises.c:135:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 1b5b7d7
+Sun Mar 22 04:54:07 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:120:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+  120 |       char elemento = *cadena[posCadena]
+      |                       ^~~~~~~~~~~~~~~~~~
+exercises.c:121:7: error: expected ‘,’ or ‘;’ before ‘if’
+  121 |       if(elemento == '(' || elemento == '{' || elemento == '['){
+      |       ^~
+exercises.c:124:7: error: ‘else’ without a previous ‘if’
+  124 |       else if(elemento == ')' || elemento == '}' || elemento == ']'){
+      |       ^~~~
+exercises.c:126:46: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                              ^~
+exercises.c:126:87: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                                       ^~
+exercises.c:126:125: error: comparison between pointer and integer [-Werror]
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                                                                                             ^~
+exercises.c:126:74: error: called object is not a function or function pointer
+  126 |             if((elemento == ')' && top(pila) == '(') || (elemento == '}' && top(pila) == '{') (elemento == ']' && top(pila) == '[')){
+      |                                                         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:135:1: error: control reaches end of non-void function [-Werror=return-type]
+  135 | }
+      | ^
+cc1: all warnings being treated as errors
+69b759f
