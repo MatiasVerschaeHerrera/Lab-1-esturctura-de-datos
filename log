@@ -902,3 +902,29 @@ exercises.c:134:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 f9438ba
+Sun Mar 22 04:50:37 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:21: error: invalid type argument of unary ‘*’ (have ‘int’)
+  121 |          push(pila, *cadena[posCadena]);
+      |                     ^~~~~~~~~~~~~~~~~~
+exercises.c:125:55: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                       ^~
+exercises.c:125:105: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                                                         ^~
+exercises.c:125:152: error: comparison between pointer and integer [-Werror]
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                                                                                                        ^~
+exercises.c:125:92: error: called object is not a function or function pointer
+  125 |             if((cadena[posCadena] == ')' && top(pila) == '(') || (cadena[posCadena] == '}' && top(pila) == '{') (cadena[posCadena] == ']' && top(pila) == '[')){
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:134:1: error: control reaches end of non-void function [-Werror=return-type]
+  134 | }
+      | ^
+cc1: all warnings being treated as errors
+cf47234
