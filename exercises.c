@@ -133,6 +133,8 @@ int parentesisBalanceados(char *cadena) {
       }
       posCadena++;
    }
+   if(pila == NULL) return 1;
+   else return 0;
 }
 
 /*link chat gpt:
