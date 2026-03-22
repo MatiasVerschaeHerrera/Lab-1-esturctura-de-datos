@@ -1291,3 +1291,26 @@ exercises.c:135:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 66cca92
+Sun Mar 22 05:05:57 PM UTC 2026: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:122:21: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  122 |          push(pila, elemento);
+      |                     ^~~~~~~~
+      |                     |
+      |                     char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:126:35: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  126 |             char primerElemento = top(pila);
+      |                                   ^~~
+exercises.c:136:1: error: control reaches end of non-void function [-Werror=return-type]
+  136 | }
+      | ^
+cc1: all warnings being treated as errors
+ce8b50a
