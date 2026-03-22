@@ -138,7 +138,3 @@ int parentesisBalanceados(char *cadena) {
    if(top(pila) == NULL) return 1;
    else return 0;
 }
-
-/*link chat gpt:
-https://chatgpt.com/s/t_69bc557b5b888191909be64ec4447937
-*/
